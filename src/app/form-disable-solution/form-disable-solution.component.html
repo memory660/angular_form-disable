@@ -1,0 +1,24 @@
+<p>form-disable-solution works!</p>
+
+<form [formGroup]="form">
+  <h1>Angular Reactive Form</h1>
+  <input formControlName="firstName" placeholder="First Name" />
+  <input
+    formControlName="lastName"
+    placeholder="Last Name"
+    [attr.disabled]="true"
+  />
+  <!--
+    or
+
+  <input
+    formControlName="lastName"
+    placeholder="Last Name"
+    readonly="true"
+  />
+  -->
+  <button (click)="onSubmit()">Submit</button>
+</form>
+
+on submit isformValid = {{ isformValid }}<br />
+<br />

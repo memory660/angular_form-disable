@@ -1,0 +1,12 @@
+<p>form-disable-probleme works!</p>
+
+<form [formGroup]="form">
+  <h1>Angular Reactive Form</h1>
+  <input formControlName="firstName" placeholder="First Name" />
+  <input formControlName="lastName" placeholder="Last Name" />
+  <button (click)="onSubmit()">Submit</button>
+</form>
+
+on submit isformValid = {{ isformValid }}<br />
+<br />
+les 2 champs sont desactivés, valid devrait etre = TRUE
