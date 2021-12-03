@@ -17,6 +17,9 @@ export class FormDisableSolutionComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) {}
 
+  /*
+  on veut que quand tous les champs d'un formulaire sont desactivés, le formulaire doit retourner valid = true
+  */
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       firstName: [{ value: 'Foo', disabled: true }, [Validators.required]],
